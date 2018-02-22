@@ -12,7 +12,13 @@ describe('getCharLastIndex()', () => {
 
   });
 
-  it('should return correct results', () => {
+  it('should return -1 when no chars are passed to it', () => {
+
+    expect(getCharLastIndex('foo')).to.equal(-1);
+
+  });
+
+  describe('should return correct results', () => {
 
     const tests = [
       ['F', 'D',  5],
@@ -29,7 +35,9 @@ describe('getCharLastIndex()', () => {
     ];
 
     for (const test of tests) {
-      expect(getCharLastIndex('ABCDEFGHIJ', test[0], test[1])).to.equal(test[2]);
+      it(`${test[0]}, ${test[1]} === ${test[2]}`, () => {
+        expect(getCharLastIndex('ABCDEFGHIJ', test[0], test[1])).to.equal(test[2]);
+      });
     }
 
   });
