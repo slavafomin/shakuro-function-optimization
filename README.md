@@ -55,6 +55,8 @@ function func(s, a, b) {
 
 Please see [the source code](./src/get-last-index-of-chars.js).
 
+Also, see [the tests](./src/get-last-index-of-chars.spec.js).
+
 
 ## An Explanation
 
