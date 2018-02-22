@@ -6,6 +6,12 @@ const getCharLastIndex = require('./get-char-last-index');
 
 describe('getCharLastIndex()', () => {
 
+  it('should return -1 on empty string input', () => {
+
+    expect(getCharLastIndex('', 'A', 'B')).to.equal(-1);
+
+  });
+
   it('should return correct results', () => {
 
     const tests = [
