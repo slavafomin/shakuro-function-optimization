@@ -53,7 +53,7 @@ function func(s, a, b) {
 
 ## A Solution
 
-Please see [the source code](./blob/master/src/get-last-index-of-chars.js).
+Please see [the source code](./src/get-last-index-of-chars.js).
 
 
 ## An Explanation
