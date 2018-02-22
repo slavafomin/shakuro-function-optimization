@@ -6,7 +6,7 @@
  * @param {string} string
  * @param {...char} chars
  *
- * @returns {number}
+ * @return {number}
  */
 module.exports = function getLastIndexOfChars (string, ...chars) {
 

@@ -1,5 +1,9 @@
 
-# getCharLastIndex function optimization
+# Shakuro test trial function optimization
+
+- Run `yarn install` to install the dependencies
+- Run `yarn lint && yarn test` to test the code
+
 
 ## The Original Task
 
@@ -46,9 +50,11 @@ function func(s, a, b) {
 
 Что можно улучшить? Как бы вы его переписали?
 
+
 ## A Solution
 
 Please see [the source code](./src/get-char-last-index.js).
+
 
 ## An Explanation
 
@@ -86,3 +92,11 @@ Please see [the source code](./src/get-char-last-index.js).
    more use cases therefore widening the function practical application.
    For example, it's now possible to specify more than 2 search characters.
    Even a single character is now could be used.
+
+
+# Author
+
+**Slava Fomin II**
+
+- [slava@fomin.io](mailto:slava@fomin.io)
+- [http://slava.fomin.io](http://slava.fomin.io)

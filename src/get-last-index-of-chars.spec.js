@@ -1,7 +1,7 @@
 
 const expect = require('chai').expect;
 
-const getCharLastIndex = require('./get-char-last-index');
+const getCharLastIndex = require('./get-last-index-of-chars');
 
 
 describe('getCharLastIndex()', () => {
