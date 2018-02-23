@@ -1,20 +1,26 @@
 
 const expect = require('chai').expect;
 
-const getCharLastIndex = require('./get-last-index-of-chars');
+const getLastIndexOfChars = require('./get-last-index-of-chars');
 
 
-describe('getCharLastIndex()', () => {
+describe('getLastIndexOfChars()', () => {
 
   it('should return -1 on empty string input', () => {
 
-    expect(getCharLastIndex('', 'A', 'B')).to.equal(-1);
+    expect(getLastIndexOfChars('', 'A', 'B')).to.equal(-1);
 
   });
 
   it('should return -1 when no chars are passed to it', () => {
 
-    expect(getCharLastIndex('foo')).to.equal(-1);
+    expect(getLastIndexOfChars('foo')).to.equal(-1);
+
+  });
+
+  it('should return correct result when single char is passed to it', () => {
+
+    expect(getLastIndexOfChars('ABC', 'B')).to.equal(1);
 
   });
 
@@ -36,7 +42,7 @@ describe('getCharLastIndex()', () => {
 
     for (const test of tests) {
       it(`${test[0]}, ${test[1]} === ${test[2]}`, () => {
-        expect(getCharLastIndex('ABCDEFGHIJ', test[0], test[1])).to.equal(test[2]);
+        expect(getLastIndexOfChars('ABCDEFGHIJ', test[0], test[1])).to.equal(test[2]);
       });
     }
 
